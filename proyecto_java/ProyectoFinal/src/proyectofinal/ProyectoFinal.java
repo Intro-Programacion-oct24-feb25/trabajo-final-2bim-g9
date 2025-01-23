@@ -19,7 +19,7 @@ public class ProyectoFinal {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         int opcion;
-        String continual;
+        String continuar;
         int[] participantes = new int[7];
         String cadena = "";
         do {
@@ -56,7 +56,10 @@ public class ProyectoFinal {
                     }
                 }
             }
-        } while (true);
+            System.out.println("Ingrese la letra S si desea volver a ingresar "
+                    + "participantes");
+            continuar= entrada.nextLine();
+        } while (continuar.equals("S"));
 
     }
 
